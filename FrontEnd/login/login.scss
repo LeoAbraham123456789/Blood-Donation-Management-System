@@ -1,0 +1,20 @@
+html{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    text-align: center;
+    width: 30%;
+}
+.image{
+    width: 90%;
+    height: 3%;
+}
+form{
+    display: inline-block;
+    .forgot_pass{
+        font-size: 19px;
+    }
+}
