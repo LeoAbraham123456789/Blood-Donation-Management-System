@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head> 
+        <meta charset="UTTF -8">
+        <meta name="viewport" content="width-device-width,initial-scale=1">
+        <title>donor register form</title>
+        <link rel="stylesheet" href="style/login.css">
+
+    </head>
+    <body> 
+            <section class="main">
+                <center><h1 class ="title">REQUEST DONOR</h1></center>
+            </section>
+        
+            <!-- <div class ="full page">
+                <a href='request_donor.html'> REQUEST DONOR</a>
+            </div> -->
+        <form id='register' class='input-group-register'>
+        <center>
+            <!-- <input type='text'class='input-field'placeholder='Blood group' required>    -->
+            <label for="BloodGrp">Blood Group</label>
+            <select name="bloodgrp" id="bloodgrp">
+                <option value="A+ve">A+ve</option>
+                <option value="B+ve">B+ve</option>
+                <option value="AB+ve">AB+ve</option>
+                <option value="O+ve">O+ve</option>
+                <option value="A-ve">A-ve</option>
+                <option value="B-ve">B-ve</option>
+                <option value="AB-ve">AB-ve</option>
+                <option value="O-ve">O-ve</option>
+              </select>
+            <input type='text' class='input-field'placeholder='District'required>
+            <input type='text' class='input-field'placeholder='Place'required>
+            <button type='submit'class='requestdonor-btn'>Request Donor</button>
+        </center>
+        </form>
+        <script>
+            var x=document.getElementById('register');
+            var y=document.getElementById('btn');
+            function register()
+            {
+                x.style.left='50px';
+                y.style.left='110px';
+            }
+        </script>
+        <script>
+            var modal = document.getElementById('donor register form');
+            window.onclick = function(event)
+            {
+                if(event.target == modal)
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
