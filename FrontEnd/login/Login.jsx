@@ -24,7 +24,7 @@
                         <br/>
                         <div className='forgot_pass'>Forgot <a href="#"> password? </a></div>
                         <br />
-                        <label>OR</label>
+                        <div className='or'>OR</div>
                         <hr></hr>
                         <br />
                         <button type="submit">Sign in with Google</button>

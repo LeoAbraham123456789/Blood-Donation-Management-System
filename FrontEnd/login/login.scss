@@ -13,7 +13,16 @@
 }
 form{
     display: inline-block;
+    .container{
+        position: relative;
     .forgot_pass{
         font-size: 19px;
+        width: 100%;
+        text-align: center;
     }
+    .or{
+        width: 100%;
+        text-align: center;
+    }
+}
 }
