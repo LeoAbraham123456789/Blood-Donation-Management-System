@@ -20,13 +20,13 @@ body{
         align-items: center;
         justify-content: center;
     }
-    
+
     .right{
         flex: 2.7;
         display: flex;
         align-items: center;
         gap: 30%;
-        
+
     .links{
         display: flex;
         .home {
@@ -34,7 +34,7 @@ body{
             white-space: nowrap;
         }
     }
-    
+
 
     .login {
         padding: 10px;
@@ -42,6 +42,7 @@ body{
         padding-right: 37px;
         background-color: red;
         color: white;
+        cursor: pointer;
         font-weight: bolder;
         border: none;
         border-radius: 10px;
