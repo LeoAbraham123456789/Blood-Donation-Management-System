@@ -13,6 +13,16 @@
 }
 form{
     display: inline-block;
+    .log_login_btn{
+        
+        border-radius: 18px;
+        background-color: #ff0000;
+        color: white;
+        font-size: 18px;
+        width: 70%;
+        padding: 10px;
+        margin-top: 12px;
+    }
     .container{
         position: relative;
     .forgot_pass{
@@ -23,6 +33,31 @@ form{
     .or{
         width: 100%;
         text-align: center;
+    }
+    .log_google{
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-radius: 15px;
+        width: 70%;
+        gap:20px;
+        cursor: pointer;
+        .logo_div{
+            padding: 5px;
+            background-color: white;
+        .logo{
+            height: 100%;
+            width: 25px;
+        }
+    }
+        div{
+            color: #4285F4;
+        }
+        
     }
 }
 }

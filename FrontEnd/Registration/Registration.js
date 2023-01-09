@@ -10,13 +10,13 @@ const Registration = () => {
 
 	const [postData, setPostData] = useState({
 		name: "",
-		password: "",
+		pass: "",
 		age: "",
-		bloodgroup: "",
-		contactnumber: "",
-		height: "",
-		weight: "",
-		date: "",
+		bdgp: "",
+		ph_num: "",
+		hght: "",
+		wght: "",
+		last_don: "",
 		status: ""
 	})
 
@@ -24,7 +24,19 @@ const Registration = () => {
 	const [status, setStatus] = useState("")
 
 	const handleSubmit = async (event) => {
-
+		event.preventDefault();
+		try{
+	
+			const response=await fetch("http://localhost:5000/insert",{
+				method:"POST",
+				headers:{"Content-Type":"application/json"},
+				body: JSON.stringify(postData)
+		});
+		console.log(JSON.stringify(postData))
+		}catch(err)
+		{
+			console.log(err.message);
+		}
 	};
 
 
@@ -58,7 +70,7 @@ const Registration = () => {
 						type="password"
 						placeholder="Password"
 						onChange={(e) => {
-							setPostData({ ...postData, password: e.target.value })
+							setPostData({ ...postData, pass: e.target.value })
 
 						}
 
@@ -83,7 +95,7 @@ const Registration = () => {
 					label="Blood Group"
 					onChange={(e) => {
 						setBloodgroup(e.target.value)
-						setPostData({ ...postData, bloodgroup: bloodgroup })
+						setPostData({ ...postData, bdgp: bloodgroup })
 					}
 					}
 				>
@@ -103,7 +115,7 @@ const Registration = () => {
 						type="text"
 						placeholder="Contact Number"
 						onChange={(e) =>
-							setPostData({ ...postData, contactnumber: e.target.value })
+							setPostData({ ...postData, ph_num: e.target.value })
 						}
 					/>
 				</Form.Group>
@@ -114,7 +126,7 @@ const Registration = () => {
 						type="text"
 						placeholder="height"
 						onChange={(e) =>
-							setPostData({ ...postData, height: e.target.value })
+							setPostData({ ...postData, hght: e.target.value })
 						}
 					/>
 				</Form.Group>
@@ -125,7 +137,7 @@ const Registration = () => {
 						type="text"
 						placeholder="weight"
 						onChange={(e) =>
-							setPostData({ ...postData, weight: e.target.value })
+							setPostData({ ...postData, wght: e.target.value })
 						}
 					/>
 				</Form.Group>
@@ -138,17 +150,17 @@ const Registration = () => {
 						shrink: true,
 					}}
 					onChange={(e) =>
-						setPostData({ ...postData, date: e.target.value })
+						setPostData({ ...postData, last_don: e.target.value })
 					}
-				/><br></br>
-				<TextField
+				></TextField><br></br>
+				 <TextField
 					className="dropdown"
 					select
 					label="status"
 					value={status}
 					onChange={(e) => {
 						setStatus(e.target.value)
-						setPostData({ ...postData, status: status })
+						setPostData({ ...postData, status: e.target.value })
 					}
 					}
 				>

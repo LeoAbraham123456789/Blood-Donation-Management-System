@@ -2,7 +2,8 @@ import logo from '../Group 8.jpg'
 import './navigationbar.scss'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-
+import Popup from 'reactjs-popup';
+import Login from '../login/Login';
 
 function Navigationbar() {
 
@@ -32,6 +33,12 @@ function Navigationbar() {
         <button className='login' onClick={navigatelogin}>
           Log In
         </button>
+        {/* <Popup trigger={ <button className='login'>
+          Log In
+        </button>} 
+     position="center">
+      <Login/>
+    </Popup> */}
       </div>
     </div>
   );

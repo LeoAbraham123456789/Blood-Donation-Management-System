@@ -5,11 +5,12 @@ import Home from './Home/Home'
 import Login from './login/Login'
 import Request from './pages/Request' 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Details from './pages/Details/Details'
 
 
 function App() {
   return (
-    <div>
+
       <Router>
         <Routes>
           <Route
@@ -45,9 +46,15 @@ function App() {
            }
          />
         </Routes>
+        <Routes>
+          <Route
+            path="/details"
+            element={
+              <Details/>
+            }/>
+        </Routes>
 
       </Router>
-    </div>
   )
 }
 
