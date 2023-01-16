@@ -19,7 +19,7 @@ app.post("/insert", async(req,res)=>{
     }
 });
 app.get('/', function (req, res) {
-    // res.render('index', {});
+    res.render('index', {});
     res.send("hello");
   });
 
