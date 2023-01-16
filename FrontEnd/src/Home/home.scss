@@ -1,0 +1,60 @@
+// *{
+//     margin-left: 2%;
+//     margin-right: 2%;
+//     padding: 0;
+//     /* font-family: Poppins; */
+//     box-sizing: border-box;
+// }
+
+.none{
+    background: 
+                url("1911.i029.021_realistic blood donor horizontal poster.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.parentdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 39%;
+}
+
+.home{
+
+    height: 90%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.btn1{
+    font-weight: bold;
+    background: #20D77F;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    flex: 1;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor:pointer;
+    align-items:center ;
+}
+
+.btn2 {
+
+    font-weight: bold;
+    background: #FF3838;
+    padding: 20px;
+    // margin-top: 390%;
+    text-align: center;
+    flex: 1;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+.adm_home {
+  display: flex;
+  .adm_homeContainer {
+    flex: 6;
+    .adm_charts {
+      width: 100%;
+      padding: 5px 20px;
+      gap: 20px;
+    }
+    
+  }
+}

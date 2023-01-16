@@ -1,0 +1,92 @@
+
+.image1{
+	width:350px;
+	height:380px;
+
+}
+.about_top{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.btn{
+}
+
+.image2{
+	width: 350px;
+	height:380px;
+}
+
+.para1{
+	font: normal normal medium 36px/55px Poppins;
+	letter-spacing: 0px;
+	color: #080808;
+	opacity: 1;
+	flex: 1;
+}
+
+.heading1{
+	font-weight: bolder;
+	/* margin: auto; */
+}
+
+
+.footer{
+	margin-top: 100px;
+}
+
+.heading6{
+	margin-left: 100px;
+}
+.about_us{
+display: flex;
+gap: 30px;
+align-items: center;
+justify-content: center;
+	
+}
+.about_images{
+		
+		flex: 1.7;
+}
+
+.about_det{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	gap: 10px;
+	box-shadow: 0px 0px 20px #5D3A001F;
+}
+
+.parentdiv4{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 200px;
+}
+.contact_text{
+	font-weight: bolder;
+
+}
+
+ul{
+	list-style-type: none;
+}
+.about_donate_btn{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 80px;
+	padding-left: 80px;
+	background-color: #008CBA;
+	color: white;
+	border-radius: 40px;
+	border: none;
+}
+.contact_top{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}

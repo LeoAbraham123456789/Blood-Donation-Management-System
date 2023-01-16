@@ -1,0 +1,59 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+
+    background: linear-gradient(to right, white 30%,black 50%);
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 20px rgba(151, 151, 151, 0.25);
+    .logo {
+        width: 236px;
+        height: 60px;
+        overflow-y: hidden;
+        display: flex;
+        margin-right: 250px;
+        flex: 2;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right{
+        flex: 2.7;
+        display: flex;
+        align-items: center;
+        gap: 30%;
+
+    .links{
+        display: flex;
+        color: white;
+        .link_home{
+            text-decoration: none;
+            color: white;
+        }
+        .home {
+            width: 90px;
+            white-space: nowrap;
+        }
+    }
+
+
+    .login {
+        padding: 10px;
+        padding-left: 37px;
+        padding-right: 37px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        font-weight: bolder;
+        border: none;
+        border-radius: 10px;
+        margin: 0;
+    }
+}
+}
