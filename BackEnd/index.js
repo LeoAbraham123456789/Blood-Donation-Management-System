@@ -18,6 +18,10 @@ app.post("/insert", async(req,res)=>{
         console.error(err.message);
     }
 });
+app.get('/', function (req, res) {
+    // res.render('index', {});
+    res.send("hello");
+  });
 
 app.post("/log_insert",async(req,res)=>{
     try{
